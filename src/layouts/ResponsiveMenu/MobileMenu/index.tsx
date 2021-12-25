@@ -1,7 +1,6 @@
 import {
   Button,
   Drawer,
-  DrawerBody,
   DrawerCloseButton,
   DrawerContent,
   DrawerOverlay,
@@ -10,9 +9,9 @@ import {
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import FontAwesomeIcon from '../../../components/FontAwesomeIcon'
+import Body from './Body'
 import Footer from './Footer'
 import Header from './Header'
-import MenuLinks from './MenuLinks'
 
 export type DrawerParams = {
   onClose: () => void
@@ -30,9 +29,7 @@ export default function MobileMenu() {
         <DrawerContent>
           <DrawerCloseButton _focus={{ boxShadows: 'none' }} size="lg" />
           <Header onClose={onClose} />
-          <DrawerBody>
-            <MenuLinks onClose={onClose} />
-          </DrawerBody>
+          <Body onClose={onClose} />
           <Footer />
         </DrawerContent>
       </Drawer>
