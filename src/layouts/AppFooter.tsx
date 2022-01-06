@@ -9,7 +9,7 @@ export default function AppFooter() {
         isExternal
         color="blue.400"
       >
-        Pokedex Page
+        PokéHub
       </Link>
       <span>&nbsp;made by:&nbsp;</span>
       <Link
