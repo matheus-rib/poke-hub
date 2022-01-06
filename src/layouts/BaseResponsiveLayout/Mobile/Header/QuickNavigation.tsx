@@ -1,14 +1,10 @@
 import { Divider, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 import { DrawerParams } from '..'
+import quickNavigationMenus from '../../quickNavigationMenus'
 import QuickNavigationButton from './QuickNavigationButton'
 
 export default function QuickNavigation({ onClose }: DrawerParams) {
-  const quickNavigationMenus = [
-    { label: 'Regions', link: '/home', icon: 'fas fa-globe' },
-    { label: 'Pokedexes', link: '/home', icon: 'fas fa-tablet-alt' },
-    { label: 'Pokemons', link: '/home', icon: 'fas fa-dragon' },
-  ]
   return (
     <>
       <Divider mt="4" />

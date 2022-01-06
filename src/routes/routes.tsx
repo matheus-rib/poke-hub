@@ -1,6 +1,6 @@
 import React from 'react'
 import { RouteObject } from 'react-router-dom'
-import ResponsiveMenu from '../layouts/ResponsiveMenu'
+import BaseResponsiveLayout from '../layouts/BaseResponsiveLayout'
 import About from '../pages/About'
 import Explore from '../pages/Explore'
 import Home from '../pages/Home'
@@ -9,7 +9,7 @@ import NotFound from '../pages/NotFound'
 export default [
   {
     path: '/',
-    element: <ResponsiveMenu />,
+    element: <BaseResponsiveLayout />,
     children: [
       { index: true, element: <Home /> },
       { path: '/explore', element: <Explore /> },

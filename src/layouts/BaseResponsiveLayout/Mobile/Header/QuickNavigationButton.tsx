@@ -2,20 +2,14 @@ import { Button, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import FontAwesomeIcon from '../../../../components/FontAwesomeIcon'
-
-type QuickNavigationButtonType = {
-  label: string
-  link: string
-  icon: string
-  onClose: () => void
-}
+import { QuickNavigationInfoType } from '../../quickNavigationMenus'
 
 export default function QuickNavigationButton({
   label,
   link,
   icon,
   onClose,
-}: QuickNavigationButtonType) {
+}: QuickNavigationInfoType) {
   return (
     <Link to={link} onClick={onClose}>
       <Button fontSize="xs" width="100%" my="2">

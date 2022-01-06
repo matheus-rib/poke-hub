@@ -14,3 +14,11 @@ export default [
     key: 'about',
   },
 ]
+
+export type MenuNavigationInfoType = {
+  label: string
+  icon: string
+  color: string
+  path: string
+  key: string
+}

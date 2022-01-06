@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Drawer,
   DrawerCloseButton,
@@ -21,7 +22,7 @@ export default function MobileMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
-      <Button onClick={onOpen} _focus={{ boxShadows: 'none' }}>
+      <Button onClick={onOpen} _focus={{ boxShadows: 'none' }} margin="2">
         <FontAwesomeIcon className="fas fa-bars" />
       </Button>
       <Drawer isOpen={isOpen} onClose={onClose} placement="left">
@@ -33,7 +34,9 @@ export default function MobileMenu() {
           <Footer />
         </DrawerContent>
       </Drawer>
-      <Outlet />
+      <Box padding="5">
+        <Outlet />
+      </Box>
     </>
   )
 }
