@@ -1,14 +1,15 @@
 import { ChakraProvider } from '@chakra-ui/react'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import Routes from './routes'
-import '@fortawesome/fontawesome-free/css/all.min.css'
+import theme from './utils/theme'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <Routes />
       </ChakraProvider>
     </BrowserRouter>
