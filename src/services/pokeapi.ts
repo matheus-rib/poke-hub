@@ -14,6 +14,10 @@ class PokeApiService {
   async fetchPokedexes(): Promise<PokeAPI.NamedAPIResourceList> {
     return this.pokeapi.getPokedexList()
   }
+
+  async fetchPokemons(): Promise<PokeAPI.NamedAPIResourceList> {
+    return this.pokeapi.getPokemonsList()
+  }
 }
 
 export default new PokeApiService()

@@ -8,7 +8,7 @@ export default function DesktopMenu() {
   return (
     <div style={{ position: 'relative', minHeight: '100vh' }}>
       <Header />
-      <Box padding="5">
+      <Box padding="5" overflowX="hidden">
         <Outlet />
       </Box>
       <Footer />
