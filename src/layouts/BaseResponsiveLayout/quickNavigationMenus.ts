@@ -1,7 +1,7 @@
 export default [
-  { label: 'Pokemons', link: '/home', icon: 'fas fa-dragon fa-fw' },
-  { label: 'Pokedexes', link: '/home', icon: 'fas fa-tablet-alt fa-fw' },
-  { label: 'Regions', link: '/home', icon: 'fas fa-globe fa-fw' },
+  { label: 'Pokemons', link: '/pokemons', icon: 'fas fa-dragon fa-fw' },
+  { label: 'Pokedexes', link: '/pokedexes', icon: 'fas fa-tablet-alt fa-fw' },
+  { label: 'Regions', link: '/regions', icon: 'fas fa-globe fa-fw' },
 ]
 
 export type QuickNavigationInfoType = {

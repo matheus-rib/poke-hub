@@ -1,5 +1,12 @@
 import PokeAPI from 'pokedex-promise-v2'
 
+type PageParams = {
+  limit?: number
+  offset?: number
+}
+
+type ResourcesParams = Array<string>
+
 class PokeApiService {
   pokeapi: PokeAPI
 
@@ -15,8 +22,14 @@ class PokeApiService {
     return this.pokeapi.getPokedexList()
   }
 
-  async fetchPokemons(): Promise<PokeAPI.NamedAPIResourceList> {
-    return this.pokeapi.getPokemonsList()
+  async fetchPokemons(
+    pageParams?: PageParams,
+  ): Promise<PokeAPI.NamedAPIResourceList> {
+    return this.pokeapi.getPokemonsList(pageParams)
+  }
+
+  async fetchResources(resources: ResourcesParams) {
+    return this.pokeapi.getResource(resources)
   }
 }
 

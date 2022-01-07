@@ -1,0 +1,18 @@
+.pagination-container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.pagination-container li a {
+  padding: .25rem;
+  margin: 0 3px 0 3px
+}
+
+.active {
+  background-color: var(--chakra-colors-gray-900);
+  font-weight: bolder;
+  padding: 2px;
+  border-radius: 5px;
+}
