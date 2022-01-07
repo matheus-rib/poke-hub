@@ -8,10 +8,15 @@ type OnClickType = {
 
 type PageParams = {
   totalPages: number
+  page: number
   setPage: (number: number) => void
 }
 
-export default function Pagination({ totalPages, setPage }: PageParams) {
+export default function Pagination({
+  totalPages,
+  setPage,
+  page = 1,
+}: PageParams) {
   const handlePageClick = (event: OnClickType) => {
     setPage(event.selected + 1)
   }
@@ -25,6 +30,7 @@ export default function Pagination({ totalPages, setPage }: PageParams) {
       pageCount={totalPages}
       className="pagination-container"
       activeClassName="active"
+      forcePage={page - 1}
       previousLabel={<NavigationButton label="<" />}
     />
   )

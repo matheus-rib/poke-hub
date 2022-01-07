@@ -4,6 +4,7 @@ import useData from '../../../hooks/useData'
 import pokeapi from '../../../services/pokeapi'
 
 export type PokemonData = {
+  id: number
   name: string
   sprite: string
 }
@@ -23,6 +24,7 @@ export default function (page: number) {
 
       return pokeapi.fetchResources(resources).then(data => {
         const mappedData = data.map((element: PokeAPI.Pokemon) => ({
+          id: element.id,
           name: element.name,
           sprite: element?.sprites?.other['official-artwork']?.front_default,
         }))

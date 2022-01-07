@@ -3,7 +3,7 @@ import React from 'react'
 import capitalize from '../../../../utils/capitalize'
 import { PokemonData } from '../../hooks/usePokemons'
 
-export default function Card({ name, sprite }: PokemonData) {
+export default function Card({ id, name, sprite }: PokemonData) {
   return (
     <Box
       borderStyle="solid"
@@ -24,7 +24,9 @@ export default function Card({ name, sprite }: PokemonData) {
         ) : (
           <Image boxSize="70px" src="assets/Pokeball70px.png" />
         )}
-        <Text textAlign="center">{capitalize(name)}</Text>
+        <Text textAlign="center">
+          {id} - {capitalize(name)}
+        </Text>
       </Flex>
     </Box>
   )

@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { CSSProperties } from 'react'
 type FontAwesomeIconType = {
   className: string
+  style?: CSSProperties
 }
 
-export default function FontAwesomeIcon({ className }: FontAwesomeIconType) {
-  return <i className={className} />
+export default function FontAwesomeIcon({
+  className,
+  style,
+}: FontAwesomeIconType) {
+  return <i className={className} style={style} />
 }
