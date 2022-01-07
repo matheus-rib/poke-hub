@@ -26,6 +26,7 @@ export default function Body({
               imageSrc="assets/Pikachu200px.png"
               label="Pokemons"
               count={pokemonsCount}
+              path="/pokemons"
             />
           </GridItem>
           <GridItem w="100%" mx="auto" maxW={400}>
@@ -33,6 +34,7 @@ export default function Body({
               imageSrc="assets/Pokedex200px.png"
               label="Pokedexes"
               count={pokedexesCount}
+              path="/pokedexes"
             />
           </GridItem>
           <GridItem w="100%" mx="auto" maxW={400}>
@@ -40,6 +42,7 @@ export default function Body({
               imageSrc="assets/Kanto200px.png"
               label="Regions"
               count={regionsCount}
+              path="/regions"
             />
           </GridItem>
         </SimpleGrid>
