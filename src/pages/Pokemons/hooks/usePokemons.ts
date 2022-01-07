@@ -16,8 +16,10 @@ export default function (page: number) {
   const offset = (page - 1) * limit
   const [pokemons, setPokemons] = useState<PokemonsData>()
   const [totalPages, setTotalPages] = useState(0)
+  const [loading, setLoading] = useState(false)
 
   const fetchData = useCallback(() => {
+    setLoading(true)
     return pokeapi.fetchPokemons({ limit, offset }).then(data => {
       setTotalPages(Math.ceil(data.count / limit) || 0)
       const resources = data.results.map(e => e.url)
@@ -29,6 +31,7 @@ export default function (page: number) {
           sprite: element?.sprites?.other['official-artwork']?.front_default,
         }))
 
+        setLoading(false)
         return setPokemons(mappedData)
       })
     })
@@ -39,5 +42,6 @@ export default function (page: number) {
   return {
     pokemons,
     totalPages,
+    loading,
   }
 }

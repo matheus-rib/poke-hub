@@ -15,9 +15,9 @@ export default function Pokemons() {
   const setPage = (page: number) => {
     setSearchParams({ page: page.toString() })
   }
-  const { pokemons, totalPages } = usePokemons(page)
+  const { pokemons, totalPages, loading } = usePokemons(page)
 
-  if (!pokemons && !totalPages) return <LoadingPage size="xl" />
+  if ((!pokemons && !totalPages) || loading) return <LoadingPage size="xl" />
 
   return (
     <Container>
