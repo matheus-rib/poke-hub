@@ -4,7 +4,7 @@ import { useSearchParams } from 'react-router-dom'
 import Container from '../../components/Container'
 import LoadingPage from '../../components/Loading/LoadingPage'
 import Pagination from '../../components/Pagination'
-import Card from './components/card'
+import Card from './components/Card'
 import Header from './components/Header'
 import usePokemons from './hooks/usePokemons'
 
