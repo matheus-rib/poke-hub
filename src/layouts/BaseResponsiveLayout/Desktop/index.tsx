@@ -6,12 +6,14 @@ import Header from './Header'
 
 export default function DesktopMenu() {
   return (
-    <div style={{ position: 'relative', height: '100vh', overflowY: 'hidden' }}>
+    <Box
+      style={{ position: 'relative', minHeight: '100vh', overflowY: 'hidden' }}
+    >
       <Header />
-      <Box padding="5" overflowX="hidden">
+      <Box padding="5">
         <Outlet />
       </Box>
       <Footer />
-    </div>
+    </Box>
   )
 }
