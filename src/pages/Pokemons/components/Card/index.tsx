@@ -10,7 +10,7 @@ export default function Card({ id, name, sprite }: PokemonData) {
       borderColor="whiteAlpha.100"
       borderWidth="2px"
       borderRadius="lg"
-      style={{ transition: 'all .2s ease-in-out' }}
+      transition="all .2s ease-in-out"
       _hover={{ transform: 'scale(1.1)' }}
       height="100%"
     >

@@ -20,7 +20,7 @@ export default function Card({ imageSrc, label, count, path }: CardParams) {
         borderStyle="solid"
         borderColor="whiteAlpha.100"
         borderWidth="2px"
-        style={{ transition: 'all .2s ease-in-out' }}
+        transition="all .2s ease-in-out"
         _hover={{ transform: 'scale(1.1)' }}
       >
         <Flex direction="column" alignItems="center">
