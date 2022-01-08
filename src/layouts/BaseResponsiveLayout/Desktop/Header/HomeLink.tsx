@@ -8,7 +8,7 @@ export default function HomeLink() {
       <Flex>
         <Image boxSize="30px" src="logo192.png" />
         <Text fontSize="xl" marginLeft="2">
-          Poké Hub
+          PokéHub
         </Text>
       </Flex>
     </Link>

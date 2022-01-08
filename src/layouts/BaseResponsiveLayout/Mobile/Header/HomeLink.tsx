@@ -9,7 +9,7 @@ export default function HomeLink({ onClose }: DrawerParams) {
       <Flex>
         <Image boxSize="30px" src="logo192.png" />
         <Text fontSize="xl" marginLeft="2">
-          Poké Hub
+          PokéHub
         </Text>
       </Flex>
     </Link>
