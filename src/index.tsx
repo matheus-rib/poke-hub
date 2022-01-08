@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import Routes from './routes'
 import theme from './utils/theme'
+import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>

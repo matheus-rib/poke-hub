@@ -1,0 +1,8 @@
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--chakra-colors-whiteAlpha-300);
+  border-radius: 5px;
+}
