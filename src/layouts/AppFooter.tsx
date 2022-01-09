@@ -5,7 +5,7 @@ export default function AppFooter() {
   return (
     <Text fontSize="xs">
       <Link
-        href="https://github.com/matheus-rib/pokedex-react"
+        href="https://github.com/matheus-rib/poke-hub"
         isExternal
         color="blue.400"
       >
