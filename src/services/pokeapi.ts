@@ -1,4 +1,4 @@
-import PokeAPI from 'pokedex-promise-v2'
+import PokeAPI, { Pokemon } from 'pokedex-promise-v2'
 
 type PageParams = {
   limit?: number
@@ -30,6 +30,10 @@ class PokeApiService {
 
   async fetchResources(resources: ResourcesParams) {
     return this.pokeapi.getResource(resources)
+  }
+
+  async fetchPokemonByNameOrId(pokemonNameOrId: string | number) {
+    return this.pokeapi.getPokemonByName(pokemonNameOrId) as Promise<Pokemon>
   }
 }
 

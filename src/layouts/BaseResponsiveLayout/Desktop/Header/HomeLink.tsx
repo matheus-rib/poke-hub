@@ -6,7 +6,7 @@ export default function HomeLink() {
   return (
     <Link to="/">
       <Flex>
-        <Image boxSize="30px" src="logo192.png" />
+        <Image boxSize="30px" src="/logo192.png" />
         <Text fontSize="xl" marginLeft="2">
           PokéHub
         </Text>

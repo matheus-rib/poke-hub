@@ -23,7 +23,7 @@ export default function Body({
         <SimpleGrid columns={[1, 1, 3]} spacing={20} padding="5" mt="5">
           <GridItem w="100%" mx="auto" maxW={400}>
             <Card
-              imageSrc="assets/Pikachu200px.png"
+              imageSrc="/assets/Pikachu200px.png"
               label="Pokemons"
               count={pokemonsCount}
               path="/pokemons"
@@ -31,7 +31,7 @@ export default function Body({
           </GridItem>
           <GridItem w="100%" mx="auto" maxW={400}>
             <Card
-              imageSrc="assets/Pokedex200px.png"
+              imageSrc="/assets/Pokedex200px.png"
               label="Pokedexes"
               count={pokedexesCount}
               path="/pokedexes"
@@ -39,7 +39,7 @@ export default function Body({
           </GridItem>
           <GridItem w="100%" mx="auto" maxW={400}>
             <Card
-              imageSrc="assets/Kanto200px.png"
+              imageSrc="/assets/Kanto200px.png"
               label="Regions"
               count={regionsCount}
               path="/regions"

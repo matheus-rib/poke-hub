@@ -5,7 +5,8 @@ import About from '../pages/About'
 import Explore from '../pages/Explore'
 import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
-import Pokemons from '../pages/Pokemons'
+import Search from '../pages/Search'
+import pokemons from './pokemons'
 
 export default [
   {
@@ -15,7 +16,8 @@ export default [
       { index: true, element: <Home /> },
       { path: '/explore', element: <Explore /> },
       { path: '/about', element: <About /> },
-      { path: '/pokemons', element: <Pokemons /> },
+      { path: '/search', element: <Search /> },
+      ...pokemons,
       { path: '*', element: <NotFound /> },
     ],
   },

@@ -3,27 +3,21 @@ import React from 'react'
 
 type DefaultSearchParams = {
   children?: JSX.Element | Array<JSX.Element> | null
-  title?: string
 }
 
-export default function NotFound({
-  children,
-  title = 'Not Found',
-}: DefaultSearchParams) {
+export default function Error({ children }: DefaultSearchParams) {
   return (
     <Flex direction="column" alignItems="center" justifyContent="center">
-      <Heading>{title}</Heading>
+      <Heading>Error</Heading>
       <Image
-        src="/assets/SadPikachu400px.png"
+        src="/assets/ConfusedPiplup400px.png"
         borderRadius="full"
         borderStyle="solid"
         borderColor="whiteAlpha.300"
         borderWidth="thick"
         my="5"
       />
-      <Text fontSize="3xl">
-        Pikachu could not find what you were looking for.
-      </Text>
+      <Text fontSize="3xl">Piplup does not know what happened.</Text>
       {children}
     </Flex>
   )
