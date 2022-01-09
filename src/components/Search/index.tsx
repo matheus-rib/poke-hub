@@ -18,7 +18,11 @@ export default function Search({ type, placeholder = 'Search' }: SearchParams) {
 
   const onInputFocus = () => setColor('blue.300')
   const onInputBlur = () => setColor('whiteAlpha.300')
-  const navigate = () => navigateTo(`/search?${qs.stringify({ type, name })}`)
+  const navigate = () => {
+    if (name) {
+      navigateTo(`/search?${qs.stringify({ type, name })}`)
+    }
+  }
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
