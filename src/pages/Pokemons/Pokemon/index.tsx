@@ -26,7 +26,7 @@ export default function Pokemon() {
   if (errorCode && errorCode !== 404) return <Error />
   if (!pokemon)
     return (
-      <NotFound title="Search results">
+      <NotFound title="Pokémon">
         {idOrName ? (
           <Text fontSize="xl">
             Resource: Pokemon - Value: {capitalize(idOrName)}
