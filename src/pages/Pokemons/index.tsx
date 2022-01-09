@@ -22,7 +22,7 @@ export default function Pokemons() {
   return (
     <Container>
       <Header />
-      <SimpleGrid columns={[2, 3, 5]} spacing={5} padding="1">
+      <SimpleGrid columns={[2, 3, 5]} spacing={5} padding="1" mt="2">
         {pokemons?.map(pokemon => (
           <GridItem key={pokemon.name} height="150px">
             <Card id={pokemon.id} name={pokemon.name} sprite={pokemon.sprite} />
