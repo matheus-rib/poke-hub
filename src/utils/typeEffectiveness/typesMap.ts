@@ -12,7 +12,7 @@ export default {
       halfDamage: ['rock', 'steel'],
       noDamage: ['ghost'],
     },
-    color: '',
+    color: '#A8A878',
   },
   fighting: {
     takes: {
@@ -25,7 +25,7 @@ export default {
       halfDamage: ['flying', 'poison', 'bug', 'psychic', 'fairy'],
       noDamage: ['ghost'],
     },
-    color: '',
+    color: '#C03028',
   },
   flying: {
     takes: {
@@ -38,7 +38,7 @@ export default {
       halfDamage: ['rock', 'steel', 'electric'],
       noDamage: [],
     },
-    color: '',
+    color: '#A890F0',
   },
   poison: {
     takes: {
@@ -51,7 +51,7 @@ export default {
       halfDamage: ['poison', 'ground', 'rock', 'ghost'],
       noDamage: ['steel'],
     },
-    color: '',
+    color: '#A040A0',
   },
   ground: {
     takes: {
@@ -64,7 +64,7 @@ export default {
       halfDamage: ['bug', 'grass'],
       noDamage: ['flying'],
     },
-    color: '',
+    color: '#E0C068',
   },
   rock: {
     takes: {
@@ -77,7 +77,7 @@ export default {
       halfDamage: ['fighting', 'ground', 'steel'],
       noDamage: [],
     },
-    color: '',
+    color: '#B8A038',
   },
   bug: {
     takes: {
@@ -98,7 +98,7 @@ export default {
       ],
       noDamage: [],
     },
-    color: '',
+    color: '#A8B81F',
   },
   ghost: {
     takes: {
@@ -111,7 +111,7 @@ export default {
       halfDamage: ['dark'],
       noDamage: ['normal'],
     },
-    color: '',
+    color: '#705898',
   },
   steel: {
     takes: {
@@ -135,7 +135,7 @@ export default {
       halfDamage: ['steel', 'fire', 'water', 'electric'],
       noDamage: [],
     },
-    color: '',
+    color: '#B8B8D0',
   },
   fire: {
     takes: {
@@ -148,7 +148,7 @@ export default {
       halfDamage: ['rock', 'fire', 'water', 'dragon'],
       noDamage: [],
     },
-    color: '',
+    color: '#F08030',
   },
   water: {
     takes: {
@@ -161,7 +161,7 @@ export default {
       halfDamage: ['water', 'grass', 'dragon'],
       noDamage: [],
     },
-    color: '',
+    color: '#6890F0',
   },
   grass: {
     takes: {
@@ -182,7 +182,7 @@ export default {
       ],
       noDamage: [],
     },
-    color: '',
+    color: '#78C850',
   },
   electric: {
     takes: {
@@ -195,7 +195,7 @@ export default {
       halfDamage: ['grass', 'electric', 'dragon'],
       noDamage: ['ground'],
     },
-    color: '',
+    color: '#F8D030',
   },
   psychic: {
     takes: {
@@ -208,7 +208,7 @@ export default {
       halfDamage: ['steel', 'psychic'],
       noDamage: ['dark'],
     },
-    color: '',
+    color: '#F85888',
   },
   ice: {
     takes: {
@@ -221,7 +221,7 @@ export default {
       halfDamage: ['steel', 'fire', 'water', 'ice'],
       noDamage: [],
     },
-    color: '',
+    color: '#98D8D8',
   },
   dragon: {
     takes: {
@@ -234,7 +234,7 @@ export default {
       halfDamage: ['steel'],
       noDamage: ['fairy'],
     },
-    color: '',
+    color: '#7038F8',
   },
   dark: {
     takes: {
@@ -247,7 +247,7 @@ export default {
       halfDamage: ['fighting', 'dark', 'fairy'],
       noDamage: [],
     },
-    color: '',
+    color: '#705848',
   },
   fairy: {
     takes: {
@@ -260,6 +260,6 @@ export default {
       halfDamage: ['poison', 'steel', 'fire'],
       noDamage: [],
     },
-    color: '',
+    color: '#EE99AC',
   },
 } as TypesMapType

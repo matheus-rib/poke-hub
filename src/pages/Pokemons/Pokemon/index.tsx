@@ -6,7 +6,10 @@ import Error from '../../../components/Error'
 import LoadingPage from '../../../components/Loading/LoadingPage'
 import usePokemon from '../../../hooks/usePokemon'
 import capitalize from '../../../utils/capitalize'
+import effectivenessCalculator from '../../../utils/typeEffectiveness/effectivenessCalculator'
+import { PokemonType } from '../../../utils/typeEffectiveness/types'
 import NotFound from '../../NotFound'
+import PokemonProfile from './PokemonProfile'
 
 type PokemonLocationType = {
   state?: {
@@ -17,14 +20,14 @@ type PokemonLocationType = {
 export default function Pokemon() {
   const location = useLocation() as PokemonLocationType
   const { idOrName } = useParams()
-  const { pokemon, loading, errorCode } = usePokemon(
+  const { pokemon, errorCode, loading } = usePokemon(
     idOrName,
     location.state?.pokemon,
   )
 
-  if (loading) return <LoadingPage size="xl" />
   if (errorCode && errorCode !== 404) return <Error />
-  if (!pokemon)
+
+  if (!pokemon && !loading) {
     return (
       <NotFound title="Pokémon">
         {idOrName ? (
@@ -34,6 +37,21 @@ export default function Pokemon() {
         ) : null}
       </NotFound>
     )
+  }
 
-  return <div>{JSON.stringify(pokemon)}</div>
+  if (pokemon) {
+    const pokemonTypes = pokemon.types.map(
+      type => type.type.name,
+    ) as Array<PokemonType>
+    const calculatedTypes = effectivenessCalculator(pokemonTypes)
+
+    return (
+      <PokemonProfile
+        pokemon={pokemon}
+        pokemonEffectiveness={calculatedTypes}
+      />
+    )
+  }
+
+  return <LoadingPage size="xl" />
 }

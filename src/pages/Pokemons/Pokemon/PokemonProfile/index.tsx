@@ -1,0 +1,30 @@
+import { Box, Heading } from '@chakra-ui/react'
+import PokeAPI from 'pokedex-promise-v2'
+import React from 'react'
+import Card from '../../../../components/Card'
+import Container from '../../../../components/Container'
+import { EffectivenessType } from '../../../../utils/typeEffectiveness/types'
+import GeneralInfo from './GeneralInfo'
+
+type PokemonProfileParamsType = {
+  pokemon: PokeAPI.Pokemon
+  pokemonEffectiveness: EffectivenessType
+}
+
+export default function PokemonProfile({
+  pokemon,
+  pokemonEffectiveness,
+}: PokemonProfileParamsType) {
+  console.log(pokemonEffectiveness)
+
+  return (
+    <Container>
+      <Box textAlign="center" mb="5">
+        <Heading>Pokémon</Heading>
+      </Box>
+      <Card padding="6">
+        <GeneralInfo pokemon={pokemon} />
+      </Card>
+    </Container>
+  )
+}
