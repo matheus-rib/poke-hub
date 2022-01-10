@@ -1,8 +1,8 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
-import { PokemonType } from '../../../../utils/typeEffectiveness/types'
-import typesMap from '../../../../utils/typeEffectiveness/typesMap'
-import TypeChip from './TypeChip'
+import { PokemonType } from '../../../../../utils/typeEffectiveness/types'
+import typesMap from '../../../../../utils/typeEffectiveness/typesMap'
+import TypeChip from '../../../components/TypeChip'
 
 type PokemonTypesParam = {
   pokemonTypes: Array<PokemonType>

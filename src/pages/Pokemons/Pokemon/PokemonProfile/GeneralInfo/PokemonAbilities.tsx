@@ -1,7 +1,7 @@
 import { Box, GridItem, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import PokeAPI from 'pokedex-promise-v2'
 import React from 'react'
-import capitalize from '../../../../utils/capitalize'
+import capitalize from '../../../../../utils/capitalize'
 
 type PokemonAbilitesParams = {
   abilities: Array<PokeAPI.AbilityElement>

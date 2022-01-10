@@ -1,10 +1,10 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
-import capitalize from '../../../../utils/capitalize'
+import capitalize from '../../../utils/capitalize'
 import {
   DamageMultiplier,
   PokemonType,
-} from '../../../../utils/typeEffectiveness/types'
+} from '../../../utils/typeEffectiveness/types'
 
 type TypeChipParams = {
   type: PokemonType

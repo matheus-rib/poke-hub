@@ -1,6 +1,6 @@
 import { Box, GridItem, SimpleGrid, Text } from '@chakra-ui/react'
 import React from 'react'
-import heightAndWeightScaleCalculator from '../../../../utils/heightAndWeightScaleCalculator'
+import heightAndWeightScaleCalculator from '../../../../../utils/heightAndWeightScaleCalculator'
 
 type PokemonHeightAndWeightParams = {
   height: number
