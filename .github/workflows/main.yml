@@ -35,12 +35,12 @@ jobs:
       - name: yarn install
         uses: borales/actions-yarn@v2.3.0
         with: 
-          cmd: yarn install --frozen-lockfile
+          cmd: install --frozen-lockfile
           
       - name: yarn build
         uses: borales/actions-yarn@v2.3.0
         with: 
-          cmd: yarn build --if-present
+          cmd: build --if-present
 
       - name: deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
