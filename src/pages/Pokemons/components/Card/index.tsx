@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import capitalize from '../../../../utils/capitalize'
 import { PokemonData } from '../../hooks/usePokemons'
+import PokeballLoading from '../../../../assets/PokeballLoading.gif'
+import PokeballDefaultImage from '../../../../assets/Pokeball70px.png'
 
 export default function Card({ id, name, sprite }: PokemonData) {
   return (
@@ -28,10 +30,10 @@ export default function Card({ id, name, sprite }: PokemonData) {
               <Image
                 src={sprite}
                 boxSize="70px"
-                fallbackSrc="/assets/PokeballLoading.gif"
+                fallbackSrc={PokeballLoading}
               />
             ) : (
-              <Image boxSize="70px" src="/assets/Pokeball70px.png" />
+              <Image boxSize="70px" src={PokeballDefaultImage} />
             )}
           </Box>
           <Text textAlign="center">

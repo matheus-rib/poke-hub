@@ -1,5 +1,6 @@
 import { Flex, Heading, Image, Text } from '@chakra-ui/react'
 import React from 'react'
+import SadPikachu from '../assets/SadPikachu400px.png'
 
 type DefaultSearchParams = {
   children?: JSX.Element | Array<JSX.Element> | null
@@ -14,7 +15,7 @@ export default function NotFound({
     <Flex direction="column" alignItems="center" justifyContent="center">
       <Heading>{title}</Heading>
       <Image
-        src="/assets/SadPikachu400px.png"
+        src={SadPikachu}
         borderRadius="full"
         borderStyle="solid"
         borderColor="whiteAlpha.300"

@@ -1,5 +1,6 @@
 import { Flex, Heading, Image, Text } from '@chakra-ui/react'
 import React from 'react'
+import ConfusedPiplup from '../../assets/ConfusedPiplup400px.png'
 
 type DefaultSearchParams = {
   children?: JSX.Element | Array<JSX.Element> | null
@@ -10,7 +11,7 @@ export default function Error({ children }: DefaultSearchParams) {
     <Flex direction="column" alignItems="center" justifyContent="center">
       <Heading>Error</Heading>
       <Image
-        src="/assets/ConfusedPiplup400px.png"
+        src={ConfusedPiplup}
         borderRadius="full"
         borderStyle="solid"
         borderColor="whiteAlpha.300"

@@ -6,6 +6,7 @@ import { PokemonType } from '../../../../../utils/typeEffectiveness/types'
 import PokemonAbilities from './PokemonAbilities'
 import PokemonHeightAndWeight from './PokemonHeightAndWeight'
 import PokemonTypes from './PokemonTypes'
+import PokeballLoading from '../../../../../assets/PokeballLoading.gif'
 
 type PokemonGeneralInfoParamsType = {
   pokemon: PokeAPI.Pokemon
@@ -32,7 +33,7 @@ export default function GeneralInfo({ pokemon }: PokemonGeneralInfoParamsType) {
         <Image
           boxSize="200px"
           src={sprite}
-          fallbackSrc="/assets/PokeballLoading.gif"
+          fallbackSrc={PokeballLoading}
           borderRadius="full"
           borderStyle="solid"
           borderWidth="medium"
