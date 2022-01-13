@@ -24,6 +24,9 @@ export default function Row({ row }: RowParams) {
             color={typesMap[weakTo.type].color}
             type={weakTo.type}
             multiplier={weakTo?.effectiveness}
+            transition="all .2s ease-in-out"
+            _hover={{ transform: 'scale(1.3)' }}
+            cursor="default"
           />
         ) : null}
       </TableCell>
@@ -34,6 +37,9 @@ export default function Row({ row }: RowParams) {
             color={typesMap[normalTo.type].color}
             type={normalTo.type}
             multiplier={normalTo?.effectiveness}
+            transition="all .2s ease-in-out"
+            _hover={{ transform: 'scale(1.3)' }}
+            cursor="default"
           />
         ) : null}
       </TableCell>
@@ -45,6 +51,9 @@ export default function Row({ row }: RowParams) {
             type={resistantTo.type}
             multiplierFontSize="xx-small"
             multiplier={resistantTo?.effectiveness}
+            transition="all .2s ease-in-out"
+            _hover={{ transform: 'scale(1.3)' }}
+            cursor="default"
           />
         ) : null}
       </TableCell>
@@ -54,6 +63,9 @@ export default function Row({ row }: RowParams) {
             mx="auto"
             color={typesMap[immuneTo.type].color}
             type={immuneTo.type}
+            transition="all .2s ease-in-out"
+            _hover={{ transform: 'scale(1.3)' }}
+            cursor="default"
           />
         ) : null}
       </TableCell>
