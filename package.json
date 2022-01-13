@@ -2,7 +2,7 @@
   "name": "poke-hub",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://matheus-rib.github.io/poke-hub",
+  "homepage": "https://matheus-rib.github.io/poke-hub/",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/react": "^1.7.3",
