@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/poke-hub/static/css/main.e6c87f9b.css",
-    "main.js": "/poke-hub/static/js/main.46527b1f.js",
+    "main.js": "/poke-hub/static/js/main.242889df.js",
     "static/media/fa-solid-900.svg": "/poke-hub/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
     "static/media/fa-brands-400.svg": "/poke-hub/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
     "static/media/PokeballLoading.gif": "/poke-hub/static/media/PokeballLoading.47331140315aef2f8bd1.gif",
@@ -25,10 +25,10 @@
     "static/media/Pikachu200px.png": "/poke-hub/static/media/Pikachu200px.789fbd557c79909a5b5b.png",
     "index.html": "/poke-hub/index.html",
     "main.e6c87f9b.css.map": "/poke-hub/static/css/main.e6c87f9b.css.map",
-    "main.46527b1f.js.map": "/poke-hub/static/js/main.46527b1f.js.map"
+    "main.242889df.js.map": "/poke-hub/static/js/main.242889df.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c87f9b.css",
-    "static/js/main.46527b1f.js"
+    "static/js/main.242889df.js"
   ]
 }
