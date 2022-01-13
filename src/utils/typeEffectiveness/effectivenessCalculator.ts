@@ -134,6 +134,7 @@ function normalDamagedTypes(pokemonTypes: DamageType) {
     ...pokemonTypes.doubleDamage,
     ...pokemonTypes.halfDamage,
     ...pokemonTypes.noDamage,
+    'none',
   ]
 
   const normalDamagedToTypes = pokemonAllTypes.filter(

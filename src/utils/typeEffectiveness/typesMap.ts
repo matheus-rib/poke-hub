@@ -262,4 +262,17 @@ export default {
     },
     color: '#EE99AC',
   },
+  none: {
+    color: '#000000',
+    takes: {
+      doubleDamage: [],
+      halfDamage: [],
+      noDamage: [],
+    },
+    deals: {
+      doubleDamage: [],
+      halfDamage: [],
+      noDamage: [],
+    },
+  },
 } as TypesMapType

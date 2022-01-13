@@ -12,41 +12,10 @@ type PokemonProfileParamsType = {
   pokemonEffectiveness: EffectivenessType
 }
 
-// type Gen = {
-//   type: PokemonType
-//   effectiveness: DamageMultiplier
-// } | void
-// function drawRow(col1: Gen, col2: Gen) {
-//   console.log({ col1, col2 })
-// }
-
 export default function PokemonProfile({
   pokemon,
   pokemonEffectiveness,
 }: PokemonProfileParamsType) {
-  // const iteratorWeakTo = getNextType([
-  //   { types: pokemonEffectiveness['2x'], effectiveness: '2x' },
-  //   { types: pokemonEffectiveness['4x'], effectiveness: '4x' },
-  // ])
-
-  // const iteratorNormalTo = getNextType([
-  //   { types: pokemonEffectiveness['1x'], effectiveness: '1x' },
-  // ])
-
-  // let stillHasWeakToTypes = true
-  // let stillHasNormalToTypes = true
-  // while (stillHasWeakToTypes || stillHasNormalToTypes) {
-  //   const nextWeakToValue = iteratorWeakTo.next().value
-  //   const nextNormalToValue = iteratorNormalTo.next().value
-
-  //   if (!nextWeakToValue) stillHasWeakToTypes = false
-  //   if (!nextNormalToValue) stillHasNormalToTypes = false
-
-  //   if (stillHasWeakToTypes || stillHasNormalToTypes) {
-  //     drawRow(nextWeakToValue, nextNormalToValue)
-  //   }
-  // }
-
   return (
     <Container>
       <Box textAlign="center" mb="5">

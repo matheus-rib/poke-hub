@@ -3,7 +3,7 @@ import {
   PokemonType,
 } from '../../../../../../../utils/typeEffectiveness/types'
 
-type NextTypeEffectivenessParam = Array<{
+export type NextTypeEffectivenessParam = Array<{
   types: Array<PokemonType | never>
   effectiveness: DamageMultiplier
 }>

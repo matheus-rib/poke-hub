@@ -17,6 +17,7 @@ export type PokemonType =
   | 'dragon'
   | 'dark'
   | 'fairy'
+  | 'none'
 
 export type DamageType = {
   doubleDamage: Array<PokemonType | never>
