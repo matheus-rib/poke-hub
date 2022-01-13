@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/poke-hub/static/css/main.4ac0ddfd.css",
-    "main.js": "/poke-hub/static/js/main.1db6c192.js",
+    "main.css": "/poke-hub/static/css/main.e6c87f9b.css",
+    "main.js": "/poke-hub/static/js/main.5c3dab45.js",
     "static/media/fa-solid-900.svg": "/poke-hub/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
     "static/media/fa-brands-400.svg": "/poke-hub/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
     "static/media/fa-solid-900.eot": "/poke-hub/static/media/fa-solid-900.9bbb245e67a133f6e486.eot",
@@ -18,11 +18,11 @@
     "static/media/fa-regular-400.woff": "/poke-hub/static/media/fa-regular-400.bb58e57c48a3e911f15f.woff",
     "static/media/fa-regular-400.woff2": "/poke-hub/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "index.html": "/poke-hub/index.html",
-    "main.4ac0ddfd.css.map": "/poke-hub/static/css/main.4ac0ddfd.css.map",
-    "main.1db6c192.js.map": "/poke-hub/static/js/main.1db6c192.js.map"
+    "main.e6c87f9b.css.map": "/poke-hub/static/css/main.e6c87f9b.css.map",
+    "main.5c3dab45.js.map": "/poke-hub/static/js/main.5c3dab45.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ac0ddfd.css",
-    "static/js/main.1db6c192.js"
+    "static/css/main.e6c87f9b.css",
+    "static/js/main.5c3dab45.js"
   ]
 }
