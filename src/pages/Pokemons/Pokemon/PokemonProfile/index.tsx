@@ -25,7 +25,10 @@ export default function PokemonProfile({
         <GeneralInfo pokemon={pokemon} />
       </Card>
       <Card mt="5">
-        <FurtherInfo pokemonEffectiveness={pokemonEffectiveness} />
+        <FurtherInfo
+          pokemonEffectiveness={pokemonEffectiveness}
+          moves={pokemon.moves}
+        />
       </Card>
     </Container>
   )
