@@ -23,7 +23,7 @@ export default function GeneralInfo({ pokemon }: PokemonGeneralInfoParamsType) {
   return (
     <Flex direction="column">
       <Heading fontSize="3xl" textAlign="center">
-        {capitalize(pokemon.name)}
+        {pokemon.id} - {capitalize(pokemon.name)}
       </Heading>
       <Flex
         justifyContent="space-between"
