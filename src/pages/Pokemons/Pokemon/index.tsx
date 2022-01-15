@@ -27,7 +27,7 @@ export default function Pokemon() {
 
   if (errorCode && errorCode !== 404) return <Error />
 
-  if (!pokemon && !loading) {
+  if (!pokemon && !loading && errorCode === 404) {
     return (
       <NotFound title="Pokémon">
         {idOrName ? (

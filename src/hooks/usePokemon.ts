@@ -17,7 +17,10 @@ export default function (
     return pokeapi
       .fetchPokemonByNameOrId(pokemonNameOrId.toLocaleLowerCase())
       .then(data => setPokemon(data))
-      .catch(e => setErrorCode(JSON.parse(JSON.stringify(e)).status))
+      .catch(e => {
+        setPokemon(undefined)
+        setErrorCode(JSON.parse(JSON.stringify(e)).status)
+      })
       .finally(() => setLoading(false))
   }, [defaultPokemon, pokemonNameOrId])
 
