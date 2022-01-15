@@ -32,11 +32,13 @@ export default function PokemonProfile({
         <Heading fontSize="md" my="auto" textAlign="left">
           {previousPokemon.pokemon ? (
             <Link to={`/pokemons/${previousPokemon.pokemon.name}`}>
-              <FontAwesomeIcon className="fas fa-chevron-left" /> Previous
+              <FontAwesomeIcon className="fas fa-chevron-left" /> Prev
             </Link>
           ) : null}
         </Heading>
-        <Heading textAlign="center">Pokémon</Heading>
+        <Heading textAlign="center" fontSize="xl">
+          Pokémon
+        </Heading>
         <Heading fontSize="md" my="auto" textAlign="right">
           {nextPokemon.pokemon ? (
             <Link to={`/pokemons/${nextPokemon.pokemon.name}`}>
